@@ -6,4 +6,11 @@
   
   //code here
 
-  
+  String.prototype.reverse = function() {
+  	var newString = "";
+  	newString = this.split("");
+  	newString.reverse();
+  	newString = newString.join("");
+  	newString = newString.trim();
+  	return newString;
+  }
